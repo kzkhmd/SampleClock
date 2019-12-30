@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		D4BAF73D23A6463000E7D707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF73C23A6463000E7D707 /* AppDelegate.swift */; };
 		D4BAF73F23A6463000E7D707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF73E23A6463000E7D707 /* SceneDelegate.swift */; };
-		D4BAF74123A6463000E7D707 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF74023A6463000E7D707 /* FirstViewController.swift */; };
-		D4BAF74323A6463000E7D707 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF74223A6463000E7D707 /* SecondViewController.swift */; };
+		D4BAF74123A6463000E7D707 /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF74023A6463000E7D707 /* AlarmListViewController.swift */; };
+		D4BAF74323A6463000E7D707 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF74223A6463000E7D707 /* TimerViewController.swift */; };
 		D4BAF74623A6463000E7D707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BAF74423A6463000E7D707 /* Main.storyboard */; };
 		D4BAF74823A6463100E7D707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BAF74723A6463100E7D707 /* Assets.xcassets */; };
 		D4BAF74B23A6463100E7D707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BAF74923A6463100E7D707 /* LaunchScreen.storyboard */; };
+		D4C44B8E23B8B143001BC694 /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C44B8D23B8B143001BC694 /* AlarmSettingViewController.swift */; };
+		D4D0CE7823B9BC6200245AF5 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0CE7723B9BC6200245AF5 /* AlarmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D4BAF73923A6463000E7D707 /* SampleClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BAF73C23A6463000E7D707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4BAF73E23A6463000E7D707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D4BAF74023A6463000E7D707 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D4BAF74223A6463000E7D707 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D4BAF74023A6463000E7D707 /* AlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
+		D4BAF74223A6463000E7D707 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		D4BAF74523A6463000E7D707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4BAF74723A6463100E7D707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4BAF74A23A6463100E7D707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4BAF74C23A6463100E7D707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C44B8D23B8B143001BC694 /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
+		D4D0CE7723B9BC6200245AF5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 			children = (
 				D4BAF73C23A6463000E7D707 /* AppDelegate.swift */,
 				D4BAF73E23A6463000E7D707 /* SceneDelegate.swift */,
-				D4BAF74023A6463000E7D707 /* FirstViewController.swift */,
-				D4BAF74223A6463000E7D707 /* SecondViewController.swift */,
+				D4D0CE7723B9BC6200245AF5 /* AlarmManager.swift */,
+				D4C44B8D23B8B143001BC694 /* AlarmSettingViewController.swift */,
+				D4BAF74023A6463000E7D707 /* AlarmListViewController.swift */,
+				D4BAF74223A6463000E7D707 /* TimerViewController.swift */,
 				D4BAF74423A6463000E7D707 /* Main.storyboard */,
 				D4BAF74723A6463100E7D707 /* Assets.xcassets */,
 				D4BAF74923A6463100E7D707 /* LaunchScreen.storyboard */,
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4BAF74323A6463000E7D707 /* SecondViewController.swift in Sources */,
-				D4BAF74123A6463000E7D707 /* FirstViewController.swift in Sources */,
+				D4BAF74323A6463000E7D707 /* TimerViewController.swift in Sources */,
+				D4BAF74123A6463000E7D707 /* AlarmListViewController.swift in Sources */,
+				D4C44B8E23B8B143001BC694 /* AlarmSettingViewController.swift in Sources */,
 				D4BAF73D23A6463000E7D707 /* AppDelegate.swift in Sources */,
 				D4BAF73F23A6463000E7D707 /* SceneDelegate.swift in Sources */,
+				D4D0CE7823B9BC6200245AF5 /* AlarmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

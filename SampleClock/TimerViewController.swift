@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  SampleClock
 //
 //  Created by 濱田一輝 on 2019/12/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class TimerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
