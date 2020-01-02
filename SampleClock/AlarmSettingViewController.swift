@@ -10,19 +10,32 @@ import UIKit
 
 class AlarmSettingViewController: UIViewController {
     
-    @IBOutlet weak var AlarmTimePicer: UIDatePicker!
+    @IBOutlet weak var alarmTimePicer: UIDatePicker!
+    
+    var alarmManager: AlarmManager?
+    var alarm: Alarm?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func onTouchCancelButton(_ sender: Any) {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.presentingViewController?.beginAppearanceTransition(true, animated: animated)
+        self.presentingViewController?.endAppearanceTransition()
+    }
+    
+    // キャンセルボタン押下時の処理
+    @IBAction func onTapCancelButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func onTouchDoneButton(_ sender: Any) {
-        print(AlarmTimePicer.date)
+    // 保存ボタン押下時の処理
+    @IBAction func onTapSaveButton(_ sender: Any) {
+        alarm?.date = alarmTimePicer.date
+        alarmManager?.setNewAlarm(alarm: alarm!)
+        
         self.dismiss(animated: true, completion: nil)
     }
-    
 }

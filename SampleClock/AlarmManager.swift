@@ -9,5 +9,17 @@
 import Foundation
 
 class AlarmManager {
+    var alarmList: [Alarm] = []
     
+    func setNewAlarm(alarm: Alarm) {
+        alarmList.append(alarm)
+    }
+    
+    func getNewAlarm() -> Alarm {
+        return Alarm()
+    }
+    
+    func removeAlarm(at index: Int) {
+        alarmList.remove(at: index)
+    }
 }

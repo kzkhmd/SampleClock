@@ -16,6 +16,7 @@
 		D4BAF74B23A6463100E7D707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BAF74923A6463100E7D707 /* LaunchScreen.storyboard */; };
 		D4C44B8E23B8B143001BC694 /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C44B8D23B8B143001BC694 /* AlarmSettingViewController.swift */; };
 		D4D0CE7823B9BC6200245AF5 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0CE7723B9BC6200245AF5 /* AlarmManager.swift */; };
+		D4D0CE7A23B9C95300245AF5 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0CE7923B9C95300245AF5 /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D4BAF74C23A6463100E7D707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C44B8D23B8B143001BC694 /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
 		D4D0CE7723B9BC6200245AF5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		D4D0CE7923B9C95300245AF5 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				D4BAF73C23A6463000E7D707 /* AppDelegate.swift */,
 				D4BAF73E23A6463000E7D707 /* SceneDelegate.swift */,
+				D4D0CE7923B9C95300245AF5 /* Alarm.swift */,
 				D4D0CE7723B9BC6200245AF5 /* AlarmManager.swift */,
 				D4C44B8D23B8B143001BC694 /* AlarmSettingViewController.swift */,
 				D4BAF74023A6463000E7D707 /* AlarmListViewController.swift */,
@@ -152,6 +155,7 @@
 				D4C44B8E23B8B143001BC694 /* AlarmSettingViewController.swift in Sources */,
 				D4BAF73D23A6463000E7D707 /* AppDelegate.swift in Sources */,
 				D4BAF73F23A6463000E7D707 /* SceneDelegate.swift in Sources */,
+				D4D0CE7A23B9C95300245AF5 /* Alarm.swift in Sources */,
 				D4D0CE7823B9BC6200245AF5 /* AlarmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
