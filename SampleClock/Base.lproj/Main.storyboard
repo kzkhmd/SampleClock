@@ -76,7 +76,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="AlarmTableView" destination="Mw9-rI-grP" id="SxF-OC-P5N"/>
+                        <outlet property="alarmTableView" destination="Mw9-rI-grP" id="6Tc-kN-cH9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -128,7 +128,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bah-3e-USy"/>
                     <connections>
-                        <outlet property="AlarmTimePicer" destination="5rb-UZ-CJW" id="eXj-d9-k43"/>
+                        <outlet property="alarmTimePicker" destination="5rb-UZ-CJW" id="H8T-TN-w1e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kl-Fa-FX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

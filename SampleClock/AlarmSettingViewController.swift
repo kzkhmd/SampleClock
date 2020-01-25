@@ -10,13 +10,19 @@ import UIKit
 
 class AlarmSettingViewController: UIViewController {
     
-    @IBOutlet weak var alarmTimePicer: UIDatePicker!
+    @IBOutlet weak var alarmTimePicker: UIDatePicker!
     
     var alarmManager: AlarmManager?
     var alarm: Alarm?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let alarm = alarm {
+            alarmTimePicker.date = alarm.date
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -33,7 +39,7 @@ class AlarmSettingViewController: UIViewController {
     
     // 保存ボタン押下時の処理
     @IBAction func onTapSaveButton(_ sender: Any) {
-        alarm?.date = alarmTimePicer.date
+        alarm?.date = alarmTimePicker.date
         alarmManager?.setNewAlarm(alarm: alarm!)
         
         self.dismiss(animated: true, completion: nil)

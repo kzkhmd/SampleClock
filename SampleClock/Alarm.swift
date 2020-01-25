@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Alarm {
+class Alarm {
     var date: Date = Date()
 }
