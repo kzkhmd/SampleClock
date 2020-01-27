@@ -47,13 +47,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QhZ-sm-FCc">
-                                                    <rect key="frame" x="347" y="15" width="49" height="31"/>
-                                                </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QhZ-sm-FCc" firstAttribute="centerY" secondItem="2IR-pd-6k2" secondAttribute="centerY" id="3U7-ba-ApJ"/>
-                                                <constraint firstItem="QhZ-sm-FCc" firstAttribute="trailing" secondItem="2IR-pd-6k2" secondAttribute="trailingMargin" id="6V0-2V-vry"/>
                                                 <constraint firstItem="ZFl-c7-cwj" firstAttribute="leading" secondItem="2IR-pd-6k2" secondAttribute="leading" constant="20" id="VEf-qS-XBA"/>
                                                 <constraint firstItem="ZFl-c7-cwj" firstAttribute="centerY" secondItem="2IR-pd-6k2" secondAttribute="centerY" id="uim-Do-wGW"/>
                                             </constraints>

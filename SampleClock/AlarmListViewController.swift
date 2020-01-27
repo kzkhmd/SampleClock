@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AlarmListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -49,6 +50,16 @@ class AlarmListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         alarmCell.textLabel?.text = formatter.string(from: alarmData.date)
         
+        if alarmCell.accessoryView == nil {
+            let switchView = UISwitch()
+            
+            switchView.isOn = alarmData.isActive
+            switchView.tag = indexPath.row
+            switchView.addTarget(self, action: #selector(handleSwitch(_:)), for: UIControl.Event.valueChanged)
+            
+            alarmCell.accessoryView = switchView
+        }
+        
         return alarmCell
     }
     
@@ -60,6 +71,14 @@ class AlarmListViewController: UIViewController, UITableViewDelegate, UITableVie
         }
     }
     
+    @objc func handleSwitch(_ sender: UISwitch) {
+        print(sender.isOn)
+        if( sender.isOn ) {
+            alarmManager.setNotification(sender.tag)
+        } else {
+            alarmManager.removeNotification(sender.tag)
+        }
+    }
     
     // MARK: - Navigation
     
