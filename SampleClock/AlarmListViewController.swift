@@ -73,6 +73,7 @@ class AlarmListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @objc func handleSwitch(_ sender: UISwitch) {
         print(sender.isOn)
+        alarmManager.alarmList[sender.tag].isActive = sender.isOn
         if( sender.isOn ) {
             alarmManager.setNotification(sender.tag)
         } else {
